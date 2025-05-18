@@ -26,7 +26,7 @@ hostnamectl set-hostname ISP; exec bash
 ```
 
  
-![image](https://github.com/KiLlYoUrSeLf06/crhbys/blob/main/screenshot/Screenshot_ISP(1).png) 
+![image](https://github.com/KiLlYoUrSeLf06/crhbys/blob/main/Screenshot/ISP(1).png) 
 
  
 ### **CLI**
