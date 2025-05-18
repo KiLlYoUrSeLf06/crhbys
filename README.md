@@ -1,4 +1,4 @@
-# Demoeczamen
+Демоэкзамен 2024
 
 ### Модуль 1: Выполнение работ по проектированию сетевой инфраструктуры  
  
@@ -8,38 +8,62 @@
  
 **a.	Присвоить имена в соответствии с топологией:**  
  
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/Topologiya.png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Topologiya.png)  
 
-### **CLI**
- 
-```
-su -
-toor
-hostnamectl set-hostname CLI; exec bash 
-нажать enter
-```
-
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/CLI(1).png)  
-
-Повторяем идентичные действие с остольными машинами
  
 ### **ISP**
  
 ```
+ 
 su -
+ 
 toor
+ 
 hostnamectl set-hostname ISP; exec bash
+ 
 нажать enter
-``` 
+ 
+```
+
+ 
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_isp(1).png) 
+
+ 
+### **CLI**
+ 
+```
+ 
+su -
+ 
+toor
+ 
+hostnamectl set-hostname CLI; exec bash
+ 
+нажать enter
+ 
+```
+
+ 
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_CTL(1).png)  
+ 
  
 ### **HQ-R**
  
 ```
+ 
 su -
+ 
 toor
+ 
 hostnamectl set-hostname HQ-R; exec bash
+ 
 нажать enter
+ 
 ```
+
+ 
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-R(1).png) 
+
  
 ### **HQ-SRV**
  
@@ -50,6 +74,10 @@ hostnamectl set-hostname HQ-SRV; exec bash
 нажать enter 
 ```
 
+ 
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-SRV(1).png) 
+
+
 ### **BR-R** 
 
 ```
@@ -58,6 +86,10 @@ toor
 hostnamectl set-hostname BR-R; exec bash
 нажать enter
 ```
+
+ 
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_BR-R(1).png) 
+ 
  
 ### **BR-SRV**
  
@@ -68,6 +100,8 @@ hostnamectl set-hostname BR-SRV; exec bash
 нажать enter
 ```
 
+
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_BR-SRV(1).png) 
 
 **b.	Рассчитайте IP-адресацию IPv4 и IPv6. Необходимо заполнить таблицу №1, чтобы эксперты могли проверить ваше рабочее место.**  
  
@@ -104,13 +138,13 @@ hostnamectl set-hostname BR-SRV; exec bash
  
 ## **CLI**  
 
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/CLI(2).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_CTL(2).png)  
  
 ```
 ip -c a
 ```
  
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/CLI(3).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_CLI(3).png)  
  
 ## **ISP**  
  
@@ -121,9 +155,9 @@ enter
 nmtui
 ```
 
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/ISP(1).png)   
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/ISP(2).png)  
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/ISP(3).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_ISP(2).png)   
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_ISP(3).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_ISP(4).png)  
  
 После установки ip-адресов необходимо переподключить интерфейсы.  
  
@@ -142,14 +176,14 @@ y
 enter
 ```
  
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/ISP(4).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_ISP(5).png)  
  
 ```
 systemctl restart network
 ip -c a
 ```
  
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/ISP(5).png)   
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_ISP(6).png)   
 
 **HQ-R**  
 ```
@@ -158,8 +192,8 @@ toor
 enter
 nmtui
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-R(1).png)
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-R(2).png)
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-R(2).png)
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-R(3).png)
 
 ```
 ctrl-x
@@ -173,12 +207,12 @@ ctrl-x
 y
 enter
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-R(3).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-R(4).png)  
 ```
 systemctl restart network
 ip -c a
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-R(4).png)
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-R(5).png)
 
 **BR-R**  
 ```
@@ -187,8 +221,8 @@ toor
 enter
 nmtui
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/BR-R(1).png)  
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/BR-R(2).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_BR-R(2).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_BR-R(3).png)  
 
 
 Необходимо включить опцию forwarding:  
@@ -198,20 +232,20 @@ ctrl-x
 y
 enter
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/BR-R(3).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_BR-R(4).png)  
 ```
 systemctl restart network
 ip -c a
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/BR-R(4).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_BR-R(5).png)  
 
 ## **BR-SRV**  
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/BR-SRV(1).png)
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_BR-SRV(2).png)
 
 ```
 ip -c a
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/BR-SRV(2).png)
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_BR-SRV(3).png)
 
 **2.	Настройте внутреннюю динамическую маршрутизацию по средствам FRR. Выберите и обоснуйте выбор протокола динамической маршрутизации из расчёта, что в дальнейшем сеть будет масштабироваться.**  
 **Настройка FRR**  
@@ -222,15 +256,13 @@ ip -c a
 ```
 nmtui
 ``` 
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-R(5).png)  
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-R(6).png) 
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-R(16).png)  
 
 ## **BR-R**
 ```
 nmtui
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/BR-R(5).png)  
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/BR-R(6).png)
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_BR-R(11).png)  
 
 **Обоснование**: Настройку динамическое маршрутизации производим с помощью протокола **OSPF** – Данный протокол динамической сети позволяет разделять сеть на логические области, что делает его масштабируемым для больших сетей.  
 Каждая область может иметь свою таблицу маршрутизации, что уменьшает нагрузку на маршрутизаторы и улучшает производительность сети.  
@@ -242,7 +274,7 @@ nano /etc/frr/daemons
 ospfd=no на строчку
 ospfd=yes
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-R(7).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-R(17).png)  
 
 ```
 ctrl-x
@@ -287,7 +319,7 @@ nano /etc/frr/daemons
 ospfd=no на строчку
 ospfd=yes
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/BR-R(7).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_BR-R(12).png)  
 
 ```
 ctrl-x
@@ -327,7 +359,7 @@ systemctl restart frr
 show ip ospf neighbor
 exit
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/Screenshot_1.png)
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_1.png)
 
 **3.	Настройте автоматическое распределение IP-адресов на роутере HQ-R.**
 **a.	Учтите, что у сервера должен быть зарезервирован адрес.**
@@ -339,20 +371,20 @@ ctrl-x
 y
 enter
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-R(9).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-R(9).png)  
 ```
 cp /etc/dhcp/dhcpd.conf{.example,}
 nano /etc/dhcp/dhcpd.conf
 ```
 поправляем файл:  
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-R(10).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-R(10).png))  
 
 
 Проверяем файл на правильность заполнения. Обратите внимание, что файл заполнен в точности со скриншотом выше. (фигурные скобки в начале и конце секции, знаки **;** и тд.)
 ```
 dhcpd -t -cf /etc/dhcp/dhcpd.conf
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-R(11).png)   
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-R(11).png)   
 
 ```
 systemctl enable --now dhcpd
@@ -365,7 +397,7 @@ journalctl -f -u dhcpd
 systemctl restart network
 ```
 После проделанных манирпуляций HQ-SRV должен получить статический адрес.
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-SRV(5).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-SRV(5).png)  
 
 **4.	Настройте локальные учётные записи на всех устройствах в соответствии с таблицей 2.**  
 **Таблица №2**  
@@ -377,7 +409,7 @@ systemctl restart network
 | Network admin     | P@ssw0rd       | HQ-R BR-R BR-SRV      |
 
 ## **CLI**
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/CLI(5).png)
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_CLI(5).png)
 
 ## **BR-R**
 
@@ -387,7 +419,7 @@ passwd branch-admin
 useradd network-admin -m -c "Network admin" -U
 passwd network-admin
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/BR-R(9).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_BR-R(9).png)  
 
 **BR-SRV**
 ```
@@ -396,7 +428,7 @@ passwd branch-admin
 useradd network-admin -m -c "Network admin" -U
 passwd network-admin
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/BR-SRV(5).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_BR-SRV(5).png)  
 
 ## **HQ-R**
 
@@ -406,14 +438,14 @@ passwd network-admin
 useradd admin -m -c "Admin" -U
 passwd admin
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-R(12).png)
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-R(12).png)
 
 ## **HQ-SRV**
 ```
 useradd admin -m -c "Admin" -U
 passwd admin
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-SRV(4).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-SRV(9).png)  
 
 **5.	Измерьте пропускную способность сети между двумя узлами HQ-R-ISP по средствам утилиты iperf 3. Предоставьте описание пропускной способности канала со скриншотами.**
 ## **ISP**
@@ -427,7 +459,7 @@ systemctl enable --now iperf3
 iperf3 -c 192.168.0.1 -f m --get-server-output
 ```
 
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-R(13).png)
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-R(13).png)
  
 **6.	Составьте backup скрипты для сохранения конфигурации сетевых устройств, а именно HQ-R BR-R. Продемонстрируйте их работу.**  
 
@@ -440,7 +472,7 @@ mkdir /opt/backup/
 ```
 nano backup-script.sh
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-R(14).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-R(14).png)  
 ```
 ctrl-x
 y
@@ -462,7 +494,7 @@ mkdir /opt/backup/
 ```
 nano backup-script.sh
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/BR-R(10).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_BR-R(10).png)  
 ```
 ctrl-x
 y
@@ -481,9 +513,7 @@ tar -tf /opt/backup/hq-r-06.01.24.tgz | less
 ```
 nano /etc/openssh/sshd_config
 ```
-
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-SRV(6).png)  
-
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-SRV(6).png)  
 ```
 ctrl-x
 y
@@ -500,7 +530,7 @@ systemctl enable --now nftables
 systemctl restart nftables
 nft list ruleset
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-R(15).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-R(15).png)  
 
 **8.	Настройте контроль доступа до HQ-SRV по SSH со всех устройств, кроме CLI.**
 
@@ -510,7 +540,7 @@ nft list ruleset
 systemctl enable --now nftables.service
 nft add rule inet filter input ip saddr 10.0.1.2 tcp dport 2222 counter drop
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-SRV(7).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-SRV(7).png)  
 
 ```
 nano /etc/nftables/nftables.nft
@@ -520,16 +550,15 @@ nano /etc/nftables/nftables.nft
 ```
 nft list ruleset | tee -a /etc/nftables/nftables.nft
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-SRV(8).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-SRV(8).png)  
 
 ```
 systemctl restart nftables
 nft list ruleset
 ```
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/HQ-SRV(9).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_HQ-SRV(9).png)  
 
 Выполняем проверку:  
 ## **CLI**
-![image](https://github.com/MiokaHS/Demoeczamen/blob/main/Screenshot/CLI(6).png)  
+![image](https://github.com/kompiik/-/blob/main/screenshot/Screenshot_CLI(6).png)  
 В результате настройки, соединение с сервером **HQ-SRV** по ssh установить не удастся.  
-  
